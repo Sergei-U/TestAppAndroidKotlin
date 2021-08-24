@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TestApp</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <string name="citate1">Покой «Если вы не готовы рискнуть обычным, вам придется довольствоваться заурядным», — Джим Рон.</string>
+    <string name="page_title" />
+    <string name="menu_settings_title" />
+    <string name="disclaimer" />
 </resources>

@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/drawable/background.xml" value="0.221875" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/drawable/ic_round_menu.xml" value="0.221875" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/drawable/ic_round_settings.xml" value="0.221875" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/drawable/rectangle.xml" value="0.221875" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/layout/film_item.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/menu/navigation_menu.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/usov.REKSOFT/AndroidStudioProjects/TestApp/app/src/main/res/menu/toolbar_menu.xml" value="0.20572916666666666" />
       </map>
     </option>
   </component>

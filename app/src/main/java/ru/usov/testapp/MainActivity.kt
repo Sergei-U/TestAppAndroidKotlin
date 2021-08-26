@@ -11,8 +11,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        buttonPanel.setOnClickListener {
-            Toast.makeText(this, "Я буду android-разработчиком!", Toast.LENGTH_SHORT).show()
+        topAppBar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.fav -> {
+                    Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.search -> {
+                    Toast.makeText(this, "Поиск", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.more -> {
+                    Toast.makeText(this, "Еще", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
         }
     }
 

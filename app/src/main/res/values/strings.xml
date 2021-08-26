@@ -6,4 +6,7 @@
     <string name="page_title" />
     <string name="menu_settings_title" />
     <string name="disclaimer" />
+    <string name="more">More</string>
+    <string name="search">Поиск</string>
+    <string name="favorites">Избранное</string>
 </resources>

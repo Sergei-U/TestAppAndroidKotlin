@@ -1,5 +1,6 @@
 package ru.usov.testapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,6 +10,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setSupportActionBar(findViewById(R.id.bottom_navigation))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setContentView(R.layout.activity_main)
 
         topAppBar.setOnMenuItemClickListener {
@@ -28,9 +31,20 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-    }
 
-    fun onClickToast(view: View) {
-        Toast.makeText(this, "CHIN!", Toast.LENGTH_SHORT).show()
+        val mainFragment = MainFragment()
+        val bundle = Bundle()
+        bundle.putString("token", "qqweazs12213")
+        MainFragment.newInstance(args = bundle)
+
+
+        val emample = Example("ex")
+        val intent = Intent(applicationContext, MainActivity::class.java)
+        intent.putExtra("ex", emample)
+
+
+        fun onClickToast(view: View) {
+            Toast.makeText(this, "CHIN!", Toast.LENGTH_SHORT).show()
+        }
     }
 }

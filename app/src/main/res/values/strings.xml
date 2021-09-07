@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">TestApp</string>
-    <string name="button">Button</string>
-    <string name="textview">TextView</string>
-    <string name="citate1">Покой «Если вы не готовы рискнуть обычным, вам придется довольствоваться заурядным», — Джим Рон.</string>
-    <string name="page_title" />
-    <string name="menu_settings_title" />
-    <string name="disclaimer" />
-    <string name="more">More</string>
-    <string name="search">Поиск</string>
-    <string name="favorites">Избранное</string>
+    <string name="app_name">FilmsSearch</string>
+    <string name="disclaimer">Постеры предоставлены https://www.movieposters.com/</string>
+    <string name="btn_menu">Меню</string>
+    <string name="btn_fav">Избранное</string>
+    <string name="btn_watch_later">Посмотреть позже</string>
+    <string name="btn_selections">Подборки</string>
+    <string name="btn_setting">Настройки</string>
+    <string name="page_title">Search it!</string>
+    <string name="menu_favorites_title">Избранное</string>
+    <string name="menu_watch_later_title">Посмотреть позже</string>
+    <string name="menu_selections_title">Подборки</string>
+    <string name="menu_settings_title">Настройки</string>
 </resources>

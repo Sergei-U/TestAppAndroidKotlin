@@ -1,10 +1,10 @@
 package com.amsdevelops.filmssearch.view.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.amsdevelops.filmssearch.R
@@ -30,10 +30,14 @@ class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //Подключаем анимаци, и передаем номер позиции у кнопки в нижнем меню
-        AnimationHelper.performFragmentCircularRevealAnimation(settings_fragment_root, requireActivity(), 5)
+        AnimationHelper.performFragmentCircularRevealAnimation(
+            settings_fragment_root,
+            requireActivity(),
+            5
+        )
         //Слушаем какой у нас сейчас выбран вариант в настройках
         viewModel.categoryPropertyLifeData.observe(viewLifecycleOwner, Observer<String> {
-            when(it) {
+            when (it) {
                 POPULAR_CATEGORY -> binding.radioGroup.check(R.id.radio_popular)
                 TOP_RATED_CATEGORY -> binding.radioGroup.check(R.id.radio_top_rated)
                 UPCOMING_CATEGORY -> binding.radioGroup.check(R.id.radio_upcoming)
@@ -42,7 +46,7 @@ class SettingsFragment : Fragment() {
         })
         //Слушатель для отправки нового состояния в настройки
         binding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
-            when(checkedId) {
+            when (checkedId) {
                 R.id.radio_popular -> viewModel.putCategoryProperty(POPULAR_CATEGORY)
                 R.id.radio_top_rated -> viewModel.putCategoryProperty(TOP_RATED_CATEGORY)
                 R.id.radio_upcoming -> viewModel.putCategoryProperty(UPCOMING_CATEGORY)

@@ -16,6 +16,7 @@ class FilmViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val title = itemView.title
     private val poster = itemView.poster
     private val description = itemView.description
+
     //Вот здесь мы находим в верстке наш прогресс бар для рейтинга
     private val ratingDonut = itemView.rating_donut
 

@@ -10,11 +10,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.amsdevelops.filmssearch.data.entity.Film
-import com.amsdevelops.filmssearch.view.rv_adapters.TopSpacingItemDecoration
 import com.amsdevelops.filmssearch.databinding.FragmentHomeBinding
 import com.amsdevelops.filmssearch.utils.AnimationHelper
 import com.amsdevelops.filmssearch.view.MainActivity
 import com.amsdevelops.filmssearch.view.rv_adapters.FilmListRecyclerAdapter
+import com.amsdevelops.filmssearch.view.rv_adapters.TopSpacingItemDecoration
 import com.amsdevelops.filmssearch.viewmodel.HomeFragmentViewModel
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.util.*
@@ -52,7 +52,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        AnimationHelper.performFragmentCircularRevealAnimation(home_fragment_root, requireActivity(), 1)
+        AnimationHelper.performFragmentCircularRevealAnimation(
+            home_fragment_root,
+            requireActivity(),
+            1
+        )
 
         initSearchView()
         initPullToRefresh()

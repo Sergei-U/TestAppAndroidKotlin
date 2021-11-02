@@ -1,7 +1,6 @@
 package com.amsdevelops.filmssearch.di.modules
 
 import android.content.Context
-import com.amsdevelops.filmssearch.App
 import com.amsdevelops.filmssearch.data.MainRepository
 import com.amsdevelops.filmssearch.data.TmdbApi
 import com.amsdevelops.filmssearch.data.preferenes.PreferenceProvider
@@ -24,5 +23,9 @@ class DomainModule(val context: Context) {
 
     @Singleton
     @Provides
-    fun provideInteractor(repository: MainRepository, tmdbApi: TmdbApi, preferenceProvider: PreferenceProvider) = Interactor(repo = repository, retrofitService = tmdbApi, preferences = preferenceProvider)
+    fun provideInteractor(
+        repository: MainRepository,
+        tmdbApi: TmdbApi,
+        preferenceProvider: PreferenceProvider
+    ) = Interactor(repo = repository, retrofitService = tmdbApi, preferences = preferenceProvider)
 }

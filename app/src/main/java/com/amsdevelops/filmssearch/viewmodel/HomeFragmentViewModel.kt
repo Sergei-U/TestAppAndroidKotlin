@@ -10,6 +10,7 @@ import javax.inject.Inject
 
 class HomeFragmentViewModel : ViewModel() {
     val showProgressBar: MutableLiveData<Boolean> = MutableLiveData()
+
     //Инициализируем интерактор
     @Inject
     lateinit var interactor: Interactor
